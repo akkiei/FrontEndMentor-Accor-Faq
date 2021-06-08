@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./main.css" />
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+  <script src="main.js"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <img src="./images/illustration-woman-online-desktop.svg" class="img2" width="400" height="400">
+    <img src="./images/illustration-box-desktop.svg" class="img1" width="150" height="130">
+
+    <div class="rightSide">
+      <div class="accordian">
+        <h3>FAQ</h3>
+        <div>
+          <div class="question" onclick="accordian(this)" id="1" style="display: inline;">How many team members
+            can I invite ?  
+            <img id="accIcon1" style="float : right;margin-top: 2%;" src="./images/icon-arrow-down.svg">
+          </div>
+          <div class="answer" id="trans1"> You can invite up to 2 additional users on the Free plan. There is no limit
+            on
+            team members for the Premium plan.</div>
+          <hr>
+        </div>
+        <div>
+          <div class="question" onclick="accordian(this)" id="2" style="display: inline;">What is the maximum file
+            upload size ? 
+            <img id="accIcon2" style="float : right;margin-top: 2%;" src="./images/icon-arrow-down.svg">
+          </div>
+          <div class="answer" id="trans2"> No more than 2GB. All files in your account must fit your allotted storage
+            space.
+          </div>
+          <hr>
+        </div>
+        <div>
+          <div class="question" onclick="accordian(this)" id="3" style="display: inline;"> How do I reset my
+            password ? 
+
+            <img id="accIcon3" style="float : right;margin-top: 2%;" src="./images/icon-arrow-down.svg">
+          </div>
+          <div class="answer" id="trans3"> Click “Forgot password” from the login page or “Change password” from your
+            profile page.
+            A reset link will be emailed to you.</div>
+          <hr>
+        </div>
+        <div>
+          <div class="question" onclick="accordian(this)" id="4" style="display: inline;"> Can I cancel my
+            subscription ?
+
+            <img id="accIcon4" style="float : right;margin-top: 2%;" src="./images/icon-arrow-down.svg">
+          </div>
+          <div class="answer" id="trans4"> Yes! Send us a message and we’ll process your request no questions asked.
+          </div>
+          <hr>
+        </div>
+      </div>
+
+
+      <!-- What is the maximum file upload size?
+      No more than 2GB. All files in your account must fit your allotted storage space.
+
+      How do I reset my password?
+      Click “Forgot password” from the login page or “Change password” from your profile page.
+      A reset link will be emailed to you.
+
+      Can I cancel my subscription?
+      Yes! Send us a message and we’ll process your request no questions asked.
+
+      Do you provide additional support?
+      Chat and email support is available 24/7. Phone lines are open during normal business hours. -->
+    </div>
+  </div>
+
+</body>
+
+</html>
